@@ -1,0 +1,19 @@
+.container {
+    margin-top:0.6em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3.5em;
+    animation: opening 1.3s ease forwards;
+}
+
+
+@keyframes opening { 
+    0% {
+        opacity: 40%;
+        transform: translateY(9px);
+    }
+    100% {
+       opacity: 100%;
+       transform: translateY(0px);
+    }
+}

@@ -1,0 +1,91 @@
+.ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10vw;
+
+}
+
+.ulBack {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.span {
+    display: block;
+    height: 1px;
+    background-color: black;
+    margin-top: 0.6em;
+    animation: spanGrow 1.9s ease forwards;
+}
+
+.link {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.link:hover {
+    .firstText { 
+        animation: fontGrow 1.5s ease forwards;
+    }
+    .span {
+        animation: spanGrowHover 1.5s ease forwards;
+    }
+}
+
+.firstText {
+    animation: fontGrowBeginning 1s ease forwards;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.secondText {
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+
+
+
+/*       Key Frames           */
+@keyframes spanGrow { 
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes spanGrowHover { 
+    0% {
+        width: 70%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes fontGrowBeginning { 
+    0% {
+        font-size: 30px;
+        letter-spacing: 2.44px;
+    }
+    100% {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+}
+
+@keyframes fontGrow { 
+    0% {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    100% {
+        font-size: 30px;
+        letter-spacing: 2.44px;
+    }
+}
+
