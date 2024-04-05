@@ -6,7 +6,10 @@ export default function Home() {
     <>
         <div className={styles.container}>
             <Navbar/>
-            <h1 className="text-center font-bold text-5xl tracking-widest"> Dennis Blömeke</h1> 
+            <div>
+                <h1 className={styles.h1}> Dennis Blömeke</h1>
+                <h2 className={styles.h2}> Junior Developer</h2> 
+            </div>
         </div>
     </>
   );
