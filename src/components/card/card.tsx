@@ -21,7 +21,7 @@ export default function Card({course, description, grade, semester}: {course: st
                 </div>
             </div>
             <h4 className={styles.h4}> {course} </h4>
-            <p className={styles.p}> mithil sajeneremrn njsansjnwejnw ajknskanskn kwndj nwd jndw jnndw jnnw nnjnw jndwjndjwn jnjnw djnwdnw </p>
+            <p className={styles.p}> {description} </p>
             <button aria-label="button" className={styles.button} onClick={handleButtonClick}> <FaAngleDown className={styles.FaAngleDown}/> </button>
         </div>
     </>

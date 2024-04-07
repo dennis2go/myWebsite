@@ -21,7 +21,7 @@
     height: 2.5em;
     width:100%;
     transform-origin: left;
-    background: linear-gradient(to right, #9ff2e4, #1eeec8);
+    background: linear-gradient(to right, #9ff2e4, #21ceae);
     animation: slide 3s ease-in-out forwards;
     border-radius: 8px;
 }
