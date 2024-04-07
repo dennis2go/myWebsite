@@ -1,0 +1,44 @@
+.container {
+    display:flex ;
+    flex-flow: row;
+    justify-content: center;
+    gap:4.1vw;
+    background-color: antiquewhite;
+    padding:45px;
+    transition: all 1s ease;
+    overflow: hidden; 
+    white-space: nowrap;
+    width:100%;
+}
+
+.innerContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width:80px;
+    /* display: inline-block;  */
+    /* animation: moving 5s linear infinite; */
+}
+
+.p {
+    text-align: center;
+}
+
+.image {
+    width:4vw;
+    height: 4vw;
+}
+
+
+
+
+/* KEYFRAMES */
+
+@keyframes moving { 
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

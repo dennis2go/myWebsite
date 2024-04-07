@@ -1,0 +1,95 @@
+.container {
+    background-image: linear-gradient(20deg, #464646, #363434);
+    height:135px;
+    width:200px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border:1px solid black; */
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.grade {
+    background: linear-gradient(-20deg, #f9f4d3, #f3e797);
+    height:26px;
+    width: 26px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.gradeP {
+    font-size: 15px;
+    padding-left:3px;
+    font-weight: 500;
+}
+
+.semester {
+    background: linear-gradient(-20deg, #f9f4d3, #f3e797);
+    height:26px;
+    width: 85px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.semesterP {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left:5px;
+}
+
+.h4 {
+    margin-top: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    color: aliceblue;
+}
+
+.button {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width:40px;
+}
+
+.p {
+    display: none;
+}
+
+.FaAngleDown {
+    color:white;
+}
+
+.container.expanded {
+    animation: expand 0.3s ease forwards; 
+    z-index: 40;
+    .p {
+        display: block;
+        max-width:80%;
+        color: aliceblue;
+        margin:-32px;
+    }
+    .h4 {
+        margin-top:-5px;
+    }
+}
+
+
+/*       Key Frames           */
+@keyframes expand { 
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 185%;
+    }
+}

@@ -1,0 +1,23 @@
+.container {
+    animation: opening 1.25s ease forwards;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.h1 {
+    font-size: 30px;
+    letter-spacing: 2.5px;
+    padding:40px 0px 12px 14px;
+    font-weight: 500;
+}
+
+@keyframes opening { 
+    0% {
+        opacity: 40%;
+        transform: translateY(9px);
+    }
+    100% {
+       opacity: 100%;
+       transform: translateY(0px);
+    }
+}

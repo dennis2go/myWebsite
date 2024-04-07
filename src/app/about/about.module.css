@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+}
+
+
+
+.h1 {
+    font-size:36px ;
+    margin-left: 1em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.span {
+    display: block;
+    height: 1px;
+    background-color: black;
+    width:24%;
+    
+}

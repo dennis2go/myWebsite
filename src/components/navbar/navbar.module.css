@@ -30,9 +30,9 @@
 
 .link:hover {
     .firstText { 
-        font-size: 30px;
-        letter-spacing: 2.45px;
+        letter-spacing: 2.2px;
         font-weight: 700;
+        transform: scale(1.2);
     }
     .span {
         animation: spanGrowHover 1s ease forwards;
@@ -40,15 +40,15 @@
 }
 
 .firstText {
-    font-size: 26px;
+    font-size: 2.4vw;
     letter-spacing: 2px;
     transition: all 1s ease;
 }
 
 .secondText {
-    font-size: 14px;
+    font-size: 1vw;
     letter-spacing: 0.6px;
-    min-width:130px;
+    min-width:140px;
     text-align: center;
 }
 
@@ -57,36 +57,51 @@
     .ul {
         display: none;
     }
-
+    .firstText {
+        font-size: 30px;
+    }
+    .secondText {
+        font-size: 14px;
+    }
     .ulBack {
         margin-top: 0;
         position: fixed;
         width: 100%;
-        height: 34em;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:end;
-        background-color: rgb(255, 255, 255);
+        justify-content:center;
+        background-color:  rgb(249, 249, 246);;
         transform: translateY(-100%);
-        transition: transform 0.3s ease;
-        padding:2em;
+        transition: transform 0.38s ease;
+        z-index: 100;
     }
 
     .ulBack.open {
+        display: flex;
+        align-items: center;
         .ul {
             display: flex;
             flex-flow: column;
-            gap:3em;
+            align-items: end;
+            gap:4em;
+            width: 178px;
         }
         transform: translateX(0%);
     }
-
+    
     .menuButton {
-        background: none;
+        margin-left: 50%;
         border: none;
         cursor: pointer;
         z-index: 1500;
+        height: 60px;
+        width: 60px;
+        display: flex; 
+        flex-flow: column;
+        align-items: center; 
+        justify-content: center; 
     }
 
     .menuIcon {
@@ -94,9 +109,20 @@
         height: 4px;
         background: black;
         margin: 6px;
+        margin-bottom: 0;
+        transition: transform 0.38s ease;  
+        z-index: 1500; 
     }
-}
 
+    /* .menuButton:hover .menuIcon:nth-of-type(2) {
+        background: rgb(0, 0, 0); 
+        transform: rotate(120deg) translateY(-13px) translateX(2px); 
+    }
+    .menuButton:hover .menuIcon:nth-of-type(1) {
+        background: rgb(0, 0, 0); 
+        transform: rotate(-120deg) translateY(-12px) translateX(-12px); 
+    } */
+}
 /*       Key Frames           */
 @keyframes spanGrow { 
     0% {

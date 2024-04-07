@@ -3,8 +3,9 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 3em;
-    animation: opening 1.3s ease forwards;
+    gap: 1.6em;
+    animation: opening 1.25s ease forwards;
+    height: 100vh;
 }
 
 .h1 {
@@ -20,6 +21,7 @@
     font-weight: 200;
     text-align: center;
 }
+
 
 
 @keyframes opening { 
