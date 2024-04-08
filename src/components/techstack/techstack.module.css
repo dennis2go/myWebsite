@@ -1,14 +1,36 @@
 .container {
     display:flex ;
     flex-flow: row;
-    justify-content: center;
-    gap:4.1vw;
-    background-color: antiquewhite;
-    padding:45px;
+    justify-content: space-between;
+    padding:45px 45px 45px 0px;
     transition: all 1s ease;
     overflow: hidden; 
     white-space: nowrap;
     width:100%;
+    top:28vh;
+    left:100%;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: moving 20s linear infinite; 
+}
+
+.container2 {
+    display:flex ;
+    flex-flow: row;
+    justify-content: space-between;
+    padding:45px 45px 45px 0px;
+    transition: all 1s ease;
+    overflow: hidden; 
+    white-space: nowrap;
+    width:100%;
+    position: absolute;
+    left:100%;
+    top:28vh;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: moving 20s linear infinite;
+    animation-delay: 10s;
 }
 
 .innerContainer {
@@ -16,8 +38,6 @@
     flex-flow: column;
     align-items: center;
     width:80px;
-    /* display: inline-block;  */
-    /* animation: moving 5s linear infinite; */
 }
 
 .p {
@@ -36,9 +56,18 @@
 
 @keyframes moving { 
     0% {
-        transform: translateX(0);
+        left:100%;
     }
     100% {
-        transform: translateX(-100%);
+        left:-100%;
+    }
+}
+
+@keyframes moving2 { 
+    0% {
+        left:0%;
+    }
+    100% {
+        left:-100%;
     }
 }

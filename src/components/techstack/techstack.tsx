@@ -29,6 +29,10 @@ export default function Techstack() {
                 <Image className={styles.image} alt="Logo" src={skill.icon}></Image>
                 <p className={styles.p}> {skill.title} </p> </div>))}  
             </div>
+            <div className={styles.container2}> {skillsList.map((skill) => (<div className={styles.innerContainer} key={skill.title}> 
+                <Image className={styles.image} alt="Logo" src={skill.icon}></Image>
+                <p className={styles.p}> {skill.title} </p> </div>))}  
+            </div>
         </>
     )
 }

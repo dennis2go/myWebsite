@@ -3,7 +3,7 @@
     text-align: center;
     letter-spacing: 1.7px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     margin-top: 2.8vh;
 }
 
@@ -17,12 +17,12 @@
 
 @media (max-width: 850px) {
     .container {
-        grid-template-columns: repeat(3, 1fr); /* Ändere die Anzahl der Spalten auf eins (eine Karte pro Zeile) */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 @media (min-width: 1500px) {
     .container {
-        grid-template-columns: repeat(5, 1fr); /* Ändere die Anzahl der Spalten auf eins (eine Karte pro Zeile) */
+        grid-template-columns: repeat(5, 1fr); 
     }
 }
