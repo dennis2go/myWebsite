@@ -1,17 +1,53 @@
-import Image from "next/image";
-import Navbar from "@/components/navbar/navbar";
+"use client"
 import styles from "./page.module.css";
-import Techstack from "@/components/techstack/techstack";
+import About from "@/components/about/about";
+import { useEffect, useRef, useState } from "react";
+import Start from "@/components/start/start";
+
 export default function Home() {
-  return (
-    <>
-        <div className={styles.container}>
-            <div className={styles.hContainer}>
-                <h1 className={styles.h1}> Dennis Blömeke</h1>
-                <h2 className={styles.h2}> Junior Developer</h2> 
-            </div>
-            <Techstack/>
-        </div>
-    </>
+    const articleRefs = useRef([]);
+
+    useEffect(() => {
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('article-visible');
+                } else {
+                  entry.target.classList.remove('article-visible');
+                }
+              });
+            }, {
+              rootMargin: '0px',
+              threshold: 0.1
+            });
+          
+            document.querySelectorAll('article').forEach(article => {
+              observer.observe(article);
+            });
+          });
+    }, []);
+
+    const setRef = (ref:never) => {
+        if (ref) {
+            articleRefs.current.push(ref);
+        }
+    };
+
+    return (
+        <>  
+            <article >
+                <Start/>
+            </article>
+            <article >
+                <Start/>
+            </article>
+            <article >
+                <About/>
+            </article>
+            <article >
+                <About/>
+            </article>
+        </>
   );
 }

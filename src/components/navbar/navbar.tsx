@@ -9,8 +9,8 @@ let modifiedNavLinks;
 let navLinks = [
     {title: "About.", description: "Who I am"},
     {title: "Skills.", description: "What I can do"},
-    {title: "Experience.", description: "What I've learned"},
     {title: "Projects.", description: "What I've done"},
+    {title: "Experience.", description: "What I've learned"},
 ]
 
 export default function Navbar() {
@@ -26,10 +26,10 @@ export default function Navbar() {
         case "/skills":
             modifiedNavLinks = navLinks.map((link, index) => index === 1 ? { title: "Home", description: "back Home" } : link);
             break;
-        case "/experience":
-            modifiedNavLinks = navLinks.map((link, index) => index === 2 ? { title: "Home", description: "back Home" } : link);
-            break;
         case "/projects":
+                modifiedNavLinks = navLinks.map((link, index) => index === 2 ? { title: "Home", description: "back Home" } : link);
+                break;
+        case "/experience":
             modifiedNavLinks = navLinks.map((link, index) => index === 3 ? { title: "Home", description: "back Home" } : link);
             break;
         default:
@@ -44,7 +44,7 @@ export default function Navbar() {
                         <li className={styles.li} key={link.title}>
                             <Link className={styles.link} href={link.title === "Home" ? "/" : `/${link.title.replace(/\./g, "").toLowerCase()}`} onClick={toggleMenu}>
                                 <div className={styles.firstText}>{link.title}</div>
-                                <div className={styles.secondText}>{link.description}</div>
+                                {/* <div className={styles.secondText}>{link.description}</div> */}
                                 <span className={styles.span}></span>
                             </Link>
                         </li>

@@ -1,36 +1,38 @@
 .ul {
     display: flex;
     flex-flow: row nowrap;
-    width: 100%;
+    width: 25em;
     /* justify-content: end; */
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .ulBack {
     display: flex;
-    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 99%;
     height:85px;
-    margin-top: 0.6em;
+    margin-top: 0.8em;
 }
 
 .span {
     display: block;
     height: 1px;
     background-color: black;
-    margin-top: 0.6em;
-    animation: spanGrow 1.4s ease forwards;
+    opacity: 20%;
+    margin-top: 0.3em;
+    animation: spanGrow 1.55s ease forwards;
 }
 
 .link {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 130px;
+    /* max-width: 130px; */
 }
 
 .link:hover {
     .firstText { 
-        letter-spacing: 2.2px;
         font-weight: 700;
         transform: scale(1.2);
     }
@@ -40,8 +42,9 @@
 }
 
 .firstText {
-    font-size: 1.75vw;
-    letter-spacing: 2px;
+    color: #33302d;
+    font-size: 18px;
+    letter-spacing: 1px;
     transition: all 1s ease;
 }
 
@@ -129,16 +132,18 @@
         width: 30%;
     }
     100% {
-        width: 70%;
+        width:86%;
     }
 }
 
 @keyframes spanGrowHover { 
     0% {
-        width: 70%;
+        width:86%;
+        opacity: 20%;
     }
     100% {
-        width: 30%;
+        width: 40%;
+        opacity: 80%;
     }
 }
 

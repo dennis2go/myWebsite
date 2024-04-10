@@ -9,15 +9,22 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bai Jamjuree", sans-serif;
 }
 
 body {
-    background-color: rgb(249, 249, 246);
+    background-color: #e9e7e0;
+}
+
+p,h1,h2,h3,h4 {
+    color: #33302d;
 }
 
 
