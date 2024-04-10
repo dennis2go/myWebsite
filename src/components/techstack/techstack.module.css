@@ -1,32 +1,33 @@
+
 .container {
     display:flex ;
     flex-flow: row;
     justify-content: space-between;
-    padding:45px 45px 45px 0px;
+    padding:45px 0px 45px 0px;
     transition: all 1s ease;
     overflow: hidden; 
     white-space: nowrap;
-    width:100%;
-    top:28vh;
+    width:98%;
+    top:20vw;
     left:100%;
     position: absolute;
-    overflow: hidden;
     white-space: nowrap;
     animation: moving 20s linear infinite; 
+    background-color: aqua;
 }
 
 .container2 {
     display:flex ;
     flex-flow: row;
     justify-content: space-between;
-    padding:45px 45px 45px 0px;
+    padding:45px 0px 45px 0px;
     transition: all 1s ease;
     overflow: hidden; 
     white-space: nowrap;
-    width:100%;
+    width:98%;
     position: absolute;
     left:100%;
-    top:28vh;
+    top:20vw;
     overflow: hidden;
     white-space: nowrap;
     animation: moving 20s linear infinite;
@@ -49,7 +50,35 @@
     height: 4vw;
 }
 
+@media (max-width: 850px) {
+    .container {
+        width:100%;
+    }
 
+    .container2 {
+        width:100%;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1350px)  {
+    .container {
+        width:96%;
+    }
+
+    .container2 {
+        width:96%;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container {
+        width:94%;
+    }
+
+    .container2 {
+        width:94%;
+    }
+}
 
 
 /* KEYFRAMES */
