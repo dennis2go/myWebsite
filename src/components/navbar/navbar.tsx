@@ -52,10 +52,12 @@ export default function Navbar() {
                 </ul>
             </div>
 
-            <button aria-label="button" className={styles.menuButton} onClick={toggleMenu}>
-                <div className={styles.menuIcon}></div>
-                        <div className={styles.menuIcon}></div>
-            </button>
+            <div className={styles.buttonContainer}>
+                <button aria-label="button" className={styles.menuButton} onClick={toggleMenu}>
+                    <div className={styles.menuIcon}></div>
+                            <div className={styles.menuIcon}></div>
+                </button>
+            </div>
         </>
     )
 }

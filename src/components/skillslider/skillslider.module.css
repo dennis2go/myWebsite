@@ -8,6 +8,7 @@
     letter-spacing: 1.5px;
     font-weight: 500;
     font-size: 20px;
+    color:#c8c8ba;
 }
 
 .slider {
@@ -40,6 +41,7 @@
 .pHeading{
     font-size: 15px;
     animation: opacity 4s ease forwards;
+    color:#c8c8ba;
 }
 
 

@@ -2,7 +2,6 @@
     display: flex;
     flex-flow: row nowrap;
     width: 25em;
-    /* justify-content: end; */
     justify-content: space-between;
 }
 
@@ -59,6 +58,7 @@
 @media (max-width: 850px) {
     .ul {
         display: none;
+
     }
     .firstText {
         font-size: 30px;
@@ -75,7 +75,7 @@
         flex-direction: column;
         align-items: center;
         justify-content:center;
-        background-color:  rgb(249, 249, 246);;
+        background-color: #e9e7e0;
         transform: translateY(-100%);
         transition: transform 0.38s ease;
         z-index: 100;
@@ -85,17 +85,24 @@
         display: flex;
         align-items: center;
         .ul {
+            margin-top: -2em;
             display: flex;
             flex-flow: column;
-            align-items: end;
+            align-items: center;
             gap:4em;
             width: 178px;
         }
         transform: translateX(0%);
     }
-    
+
+    .buttonContainer {
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .menuButton {
-        margin-left: 50%;
         border: none;
         cursor: pointer;
         z-index: 1500;

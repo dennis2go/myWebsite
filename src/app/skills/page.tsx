@@ -18,11 +18,15 @@ let technologySkills = [
 export default function SkillsPage() {
   return (
     <>
-        <div className={styles.container}>
-            <h1 className={styles.h1}> Programming Languages</h1>
-            {languageSkills.map((skill) => ( <SkillSlider key= {skill.skill} skill={skill.skill} percentage={skill.percentage} />))}
-            <h1 className={styles.h1}> Technologies</h1>
-            {technologySkills.map((skill) => ( <SkillSlider key= {skill.skill} skill={skill.skill} percentage={skill.percentage} />))}
+        <div className={styles.mainContainer}>
+            <div className={styles.container}>
+                <h1 className={styles.h1}> Programming Languages</h1>
+                {languageSkills.map((skill) => ( <SkillSlider key= {skill.skill} skill={skill.skill} percentage={skill.percentage} />))}
+            </div>
+            <div className={styles.container}>
+                <h1 className={styles.h1}> Technologies</h1>
+                {technologySkills.map((skill) => ( <SkillSlider key= {skill.skill} skill={skill.skill} percentage={skill.percentage} />))}
+            </div>
         </div>
     </>
   )

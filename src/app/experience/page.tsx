@@ -2,7 +2,7 @@ import styles from "./experience.module.css"
 import Card from "@/components/card/card"
 
 const courses = [
-    {course: "Web Engineering 1" ,description: "Mainly learning CSS and especially Typescript. Covered concepts such as events and asynchrony",grade:1.3 ,semester:"3.Semester"},
+    {course: "Web Engineering 1" ,description: "Mainly learning HTML, CSS and especially Java-/Typescript. Covered concepts such as events and asynchrony",grade:1.3 ,semester:"3.Semester"},
     {course: "Web Engineering 2" ,description: "Building our own full stack shopping application. With the MERN stack and an in-memory MongoDB database",grade:1.3 ,semester:"4.Semester"},
     {course: "Computergrafik" ,description: "Step-by-step implementation (weekly consecutive tasks to improve the ray tracer) of a complex ray tracer in Java",grade:1.3 ,semester:"4.Semester"},
     {course: "Human Computer Interaction" ,description: "Implementation of a drawing application using gesture-control to draw and speech to call functions.(Done in Processing)",grade:1.0 ,semester:"4.Semester"},

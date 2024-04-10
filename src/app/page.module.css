@@ -1,4 +1,11 @@
-.article-visible{
+/* .classNameInView{
     opacity: 1;
     transform: translateY(0px);
+    background-color: rgb(236, 144, 44);
 }
+
+.classNameNotInView{
+    opacity: 0;
+    transform: translateY(0px);
+    background-color: aqua;
+} */
