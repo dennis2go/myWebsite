@@ -6,6 +6,7 @@
     gap: 1.6em;
     animation: opening 1.25s ease forwards;
     height: 100vh;
+    overflow: hidden; 
 }
 
 .h1 {
